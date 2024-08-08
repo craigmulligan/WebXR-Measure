@@ -1,8 +1,6 @@
 import * as THREE from "three";
 import { ARButton } from "three/examples/jsm/webxr/ARButton.js";
 import { BufferGeometryUtils } from "three/examples/jsm/utils/BufferGeometryUtils.js";
-import WebXRPolyfill from "webxr-polyfill";
-const polyfill = new WebXRPolyfill();
 
 let container, labelContainer;
 let camera, scene, renderer, light;
@@ -228,4 +226,3 @@ function render(timestamp, frame) {
 }
 
 export { initXR };
-
